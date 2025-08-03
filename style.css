@@ -1,15 +1,73 @@
-td.value span,
-td span.above span,
-td span.below span {
-  display: inline-block;
-  width: 40px;       /* Makes all numbers align neatly */
-  text-align: right;
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    /*border: 1px solid red;*/
 }
 
-.above {
-  color: #4CAF50;     /* Optional: green for higher */
+table {
+    font-size:20px;
+    width: 400px;
 }
 
+.top {
+    border-bottom: 1px solid black;
+}
 .below {
-  color: #F44336;     /* Optional: red for lower */
+    background-color: rgb(114, 129, 132);
+    text-align: center;
+}
+.above {
+    background-color: rgba(37, 156, 146, 0.781);
+    text-align: center;
+}
+
+td {
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.stat {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    width: 128px;
+}
+
+.min, .max {
+    padding:1px;
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+}
+
+.min {
+    float: left;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+span {
+    border-radius: 5px;
+    display: inline-block;
+    width: 40px;
+}
+
+.value {
+    background-color: rgb(197, 197, 197);
+    width: 210px;
+}
+
+.max {
+    float: right;
+}
+
+.spacer {
+    height: 7px;
+}
+
+body {
+    margin-left: 40%;
+    margin-top: 15%;
 }
