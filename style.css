@@ -1,54 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #eef3f7;
+td.value span,
+td span.above span,
+td span.below span {
+  display: inline-block;
+  width: 40px;       /* Makes all numbers align neatly */
+  text-align: right;
 }
-header {
-    background-color: #4b78a5;
-    padding: 10px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.above {
+  color: #4CAF50;     /* Optional: green for higher */
 }
-nav button {
-    background: #6da9e3;
-    color: white;
-    border: none;
-    padding: 8px;
-    margin: 2px;
-    cursor: pointer;
-}
-.intro {
-    background-color: #cce0f4;
-    padding: 10px;
-}
-main {
-    display: flex;
-    padding: 10px;
-}
-.shop, .featured, .chat {
-    background: white;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 8px;
-}
-.shop {
-    width: 20%;
-}
-.featured {
-    width: 40%;
-    text-align: center;
-}
-.chat {
-    width: 40%;
-}
-.cat-image {
-    width: 100%;
-}
-footer {
-    background-color: #4b78a5;
-    color: white;
-    text-align: center;
-    padding: 10px;
+
+.below {
+  color: #F44336;     /* Optional: red for lower */
 }
